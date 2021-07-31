@@ -20,6 +20,7 @@ function extractVersionFromRef (ref) {
   return {
     version,
     versionWithoutV,
+    versionWithDashesNotDots,
     ...parseSemver(version)
   }
 }
