@@ -6,6 +6,7 @@ const { extractVersionFromRef } = require('./extract')
 const OUTPUTS = {
   version: 'version',
   versionWithoutV: 'version-without-v',
+  versionWithDashesNotDots: 'version-with-dashes-not-dots',
   major: 'major',
   minor: 'minor',
   patch: 'patch',
