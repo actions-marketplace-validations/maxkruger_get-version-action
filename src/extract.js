@@ -15,6 +15,7 @@ function extractVersionFromRef (ref) {
   const versionWithoutV = version.startsWith('v')
     ? version.substring(1)
     : version
+  const versionWithDashesNotDots = version.split(".").join("-")
 
   return {
     version,
