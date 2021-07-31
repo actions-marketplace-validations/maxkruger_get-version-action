@@ -8789,10 +8789,12 @@ function extractVersionFromRef (ref) {
   const versionWithoutV = version.startsWith('v')
     ? version.substring(1)
     : version
+  const versionWithDashesNotDots = version.split(".").join("-")
 
   return {
     version,
     versionWithoutV,
+    versionWithDashesNotDots,	  
     ...parseSemver(version)
   }
 }
@@ -8839,6 +8841,7 @@ const { extractVersionFromRef } = __webpack_require__(221)
 const OUTPUTS = {
   version: 'version',
   versionWithoutV: 'version-without-v',
+  versionWithDashesNotDots: 'version-with-dashes-not-dots',
   major: 'major',
   minor: 'minor',
   patch: 'patch',
