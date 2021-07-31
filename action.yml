@@ -5,6 +5,8 @@ outputs:
     description: 'The pushed version, for example "v1.2.7"'
   version-without-v:
     description: 'The pushed version, without the v prefix, for example "1.2.7"'
+  version-with-dashes-not-dots:
+    description: 'The pushed version, with dots ("." removed, replaced with dashes ("-") for example "1-2-7'
   is-semver:
     description: 'Set to true if the pushed version is a valid semver value. Undefined otherwise.'
   major:
